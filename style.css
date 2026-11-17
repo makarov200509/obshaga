@@ -11,3 +11,13 @@
 .theory img,.theory video,.theory iframe{max-width:100%;height:auto}
 .theory-controls{align-items:center;gap:8px}.theory-controls .muted{margin-right:6px}.theory-controls button{min-width:48px}
 @media(max-width:600px){.theory{padding:12px;line-height:1.55}.theory table{font-size:.82em}.theory td,.theory th{min-width:75px;padding:5px 6px}.theory-controls button{padding:8px 10px}main,.panel{min-width:0}}
+
+/* Smaller, consistent theory text on phones; no size controls. */
+@media (max-width:600px){
+  .theory{font-size:13px;line-height:1.5}
+  .theory p,.theory li,.theory td,.theory th{font-size:inherit}
+  .theory h2{font-size:17px;line-height:1.35}
+  .theory h3{font-size:15px;line-height:1.4}
+  .theory table{font-size:12px}
+  .theory td,.theory th{min-width:0;padding:4px 5px}
+}
